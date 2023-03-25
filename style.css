@@ -16,8 +16,9 @@
     background-color: rgba(47, 24, 147, 0.9);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
     height: 100vh;
+    width: 100%;
+
 
 }
 
@@ -67,7 +68,10 @@ p {
     font-size: 22px;
     color: white;
 }
-
+img{
+    width: 100%;
+    object-fit: cover;
+}
 .button1 {
     background-color: #482BE7;
     color: white;
@@ -84,6 +88,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5rem 5rem;
+    height: 50vh;
 }
 
 .section2_1 {
@@ -123,12 +128,18 @@ p {
 .section3 {
     background-image: url(assets/Rectangle.png);
     background-color: #2F1893;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
     height: 100vh;
+    width: 100%;
+}
+.section3_img{
+    margin-left: -30rem;
 }
 
 .section3_main {
@@ -188,3 +199,167 @@ p {
 }
 
 /*Section 4 */
+
+.section4{
+    
+    background-image: url(assets/form_background.png);
+    background-color: #2F1893;
+
+    background-size: cover;
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 5rem;
+
+}
+
+.section4_left{
+    flex: 1;
+    padding: 7rem;
+    
+}
+
+.section4_right{
+    flex: 1;
+
+}
+
+.form_container{
+    display: flex;
+
+    flex-direction: column;
+    gap: 3rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0rem 0rem 5rem 0rem;
+}
+.input_conatiner{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 3rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.input_conatiner>input{
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border: 1px solid lightgray;
+    outline: none;
+    width: 80%;
+}
+.input_conatiner>button{
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    outline: none;
+    width: 80%;
+    color: white;
+    border: none;
+}
+
+.input_conatiner>:nth-child(3){
+    background-color: #25DAC5;
+}
+.input_conatiner>:nth-child(5){
+    background-color: #1DA1F2;
+}
+.cto_form{
+    display: flex;
+    width: 100%;
+}
+
+.cto_form>button{
+    width: 50%;
+    padding: 2rem;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+}
+
+.cto_form>:nth-child(1){
+    border-bottom: 2px solid black;
+
+}
+
+.form_line{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form_line>div{
+    width: 40%;
+    border-bottom: 1px solid lightgray;
+}
+.navbar_mobile{
+    display: none;
+}
+.navbar_mobile>a{
+    display: none;
+}
+@media screen and (max-width: 950px) {
+ 
+
+}
+
+@media screen and (max-width: 650px) {
+.navbar{
+    display: none;
+}
+.navbar_mobile{
+    display: flex;
+    gap: 1rem;
+}
+.navbar_mobile>a{
+    display: flex;
+}
+.section1 {
+    padding: 3rem 2rem;
+    height: auto;
+   
+}
+
+.text1 {
+    width: 100%;
+}
+
+.section2 {
+    padding: 3rem 2rem;
+    height: auto;
+
+}
+
+.section4 {
+    padding: 3rem 2rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.section4_left {
+    padding: 0rem;
+}
+
+.section3 {
+    height: auto;
+    flex-direction: column;
+}
+.section3_img {
+    margin-left: 0rem;
+    width: 70%;
+}
+.section3_img>img {
+  object-fit: contain;
+}
+.section3_main {
+  padding: 2rem;
+    gap: 2rem;
+}
+
+.section3_svg {
+    flex-direction: row;
+
+}
+
+}
